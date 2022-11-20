@@ -1,11 +1,10 @@
 @font-face {
     font-family: "coffee+tea-Medium";
-    src:url("assets/coffee+tea-Medium.otf")
+    src:url("coffee+tea-Medium.otf")
 }
 
 body{
-    background-image: url("assets/griptape.png");
-    /* background-position: center center; */
+    background-image: url("griptape.png");
 }
 
 .workout{
