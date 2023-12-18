@@ -1,62 +1,65 @@
 @font-face {
     font-family: "coffee+tea-Medium";
-    src:url("coffee+tea-Medium.otf")
+    src: url("coffee+tea-Medium.otf");
 }
 
-body{
-    background-image: url("griptape.png");
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("https://raw.githubusercontent.com/gomezcalderondaniel/SBDice/main/griptape.png");
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
-.workout{
+.workout {
     padding-top: 25%;
     align-items: center;
     text-align: center;
     color: #fff;
-    font-size: 1em;
+    font-size: 0.7em;
     font-family: "coffee+tea-Medium";
 }
-
 
 .title {
     padding: 20px;
     font: 24px/28px "coffee+tea-Medium";
     color: #fff;
     text-align: center;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: center;
-  }
-  
-  .dice {
+}
+
+.dice {
     width: 100px;
     height: 100px;
     margin: 50px;
     perspective: 400px;
-  }
-  
-  .cube {
+}
+
+.cube {
     position: relative;
     width: 100px;
     height: 100px;
     transform-style: preserve-3d;
     transform: translateZ(-50px) rotateX(0) rotateY(0);
     transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  
-  .side {
+    border-radius: 10px; /* Added rounded corners */
+}
+
+.side {
     position: absolute;
     width: 100px;
     height: 100px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 2px;
+    border-radius: 2px; /* Added rounded corners */
     overflow: hidden;
     background: #c00;
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-  }
+    backface-visibility: hidden;
+}
   
   .side_1 {
       transform: translateZ(-50px) rotateX(180deg);
@@ -145,4 +148,4 @@ body{
   
   .dot_3, .dot_6, .dot_9 {
       left: 80px;
-    }
+    }    
